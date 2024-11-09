@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: Raleway;
+  overflow-x: hidden;
+}
+
+
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("./assets/font/Raleway-Regular.ttf");
+    font-family: "Raleway";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("./assets/font/EBGaramond-Regular.ttf");
+    font-family: "EB Garamond";
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("./assets/font/Raleway-Medium.ttf");
+    font-family: "Raleway";
+    font-weight: 560;
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("./assets/font/Raleway-SemiBold.ttf");
+    font-family: "Raleway";
+    font-weight: 600;
+  }
