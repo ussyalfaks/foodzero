@@ -2,6 +2,11 @@
 
 Welcome to **Food Zero**, a modern and responsive website for a restaurant. Food Zero is designed to provide an engaging, user-friendly experience for customers looking to explore the restaurant’s offerings and make reservations.
 
+## Screenshot
+
+![screencapture-foodzero-two-vercel-app-2024-11-10-08_36_33](https://github.com/user-attachments/assets/1681e01c-1b61-4570-ba44-971fbe66cba9)
+
+
 ## Features
 
 - **Responsive Design**: Ensures optimal viewing across devices, from desktops to smartphones.
@@ -20,27 +25,20 @@ Welcome to **Food Zero**, a modern and responsive website for a restaurant. Food
 
 ## Setup and Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/food-zero.git
 
-2. Navigate to the project directory:
+### 2. Navigate to the project directory:
     cd food
 
-3. Install the dependencies:
+### 3. Install the dependencies:
     npm install
 
-4. Run the development server
-    npm start
+### 4. Run the development server
+    npm run dev
 
-   food/
-├── src/
-│   ├── assets/           # Images and static assets
-│   ├── components/       # Reusable components (e.g., Header, Footer)
-│   ├── pages/            # Different pages of the website
-│   ├── App.js            # Main application component
-│   └── index.js          # Entry point
-└── README.md
+ 
 
 ## Usage
 Navigate through the pages to explore the restaurant’s menu and contact options.
