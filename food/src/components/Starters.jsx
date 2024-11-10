@@ -9,8 +9,8 @@ import StartersImg from "../assets/StartersImg.png"
 const Starters = () => {
   return (
     <>
-    <div className="flex flex-col justify-center items-center">
-        <h1 className=" font-serif text-8xl mt-8">Starters</h1>
+    <div className="flex flex-col justify-center items-center pt-96">
+        <h1 className=" font-serif text-6xl md:text-7xl lg:text-8xl mt-8">Starters</h1>
         <p className=" text-center">
         This is a section of your menu. Give your section a brief description
         </p>

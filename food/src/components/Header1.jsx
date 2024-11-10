@@ -1,50 +1,67 @@
-import { Menu } from 'lucide-react';
-import MenuHeroBg from '../assets/menuHeroBg.png'
+import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
+import { Menu, Facebook, Twitter, Instagram, MessageCircle } from 'lucide-react';
 
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-
-
-const Header1 = () => {
   return (
-    <div className="relative h-screen w-full">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${MenuHeroBg})`,
-        }}
-      />
-
-      {/* Header Content */}
-      <div className="relative z-10 w-full h-full">
-        <nav className="flex justify-between items-center px-8 py-6">
-          {/* Logo */}
-          <div className='flex items-center gap-6'>
+    <div className='relative'>
+      <div className='bg-[#233000] py-4 fixed z-50 px-9 flex justify-between text-white  w-full'>
+        <div className='flex items-center gap-6'>
           <img src={Logo} alt="" className='w-36 h-auto' />
-          <Menu className="text-white" size={30} />
+          <Menu className="text-white cursor-pointer" size={30} onClick={toggleMenu} />
         </div>
-
-          {/* Right Navigation Items */}
-          <div className="flex items-center gap-8">
-            <span className="text-white max-sm:hidden">+86 852 346 000</span>
-            <button className='border text-white border-[#ffffff] px-3 py-3 rounded-lg'>Reservation</button>
-          </div>
-        </nav>
-
-        {/* Main Header1 Content */}
-        <div className="flex flex-col justify-center px-8 mt-32">
-          <h1 className="text-white text-7xl font-serif mb-6">
-            View Our <br />
-            New Menu
-          </h1>
-          <p className="text-white text-xl font-light">
-            The freshest ingredients for you every day
-          </p>
+        <div className='flex items-center gap-4'>
+          <p className='max-sm:hidden'>+81 66 280 639</p>
+          <button className='border border-[#ffffff] px-3 py-3 rounded-lg'>Reservation</button>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <div
+          className='herobg bg-[#233000] z-[1000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
+        
+        >
+          <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>
+            <li className=''><Link to="/">Home</Link></li>
+            <li><Link to="/MenuPage">Menu</Link></li>
+            <li className=' cursor-not-allowed' >Blogs</li>
+            <li className=' cursor-not-allowed'>About</li>
+            <li className=' cursor-not-allowed'>Contact</li>
+          </ul>
+
+          <div className=''>
+            <h1 className='text-3xl border-b-2 border-dotted mb-2'>Contact</h1>
+            <div className='space-y-4'>
+              <div className=''>
+                <p>+81 66 280 639</p>
+                <p>info@foodzero.com</p>
+              </div>
+              <div>
+                <p>1959 Mandau Street.</p>
+                <p>United State, 89715</p>
+              </div>
+            </div>
+            <div>
+              <div className='flex gap-3 my-3 cursor-pointer'>
+                <Facebook />
+                <Twitter className='fill-white' />
+                <MessageCircle />
+                <Instagram />
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-[#233000] -z-10 opacity-80"></div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Header1;
+export default Header;

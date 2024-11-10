@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from '../assets/Logo.png';
 import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 
 const Footer = () => {
@@ -11,15 +12,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#2C3A0F] text-white py-16">
+    <footer className="bg-[#233000] text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo Section */}
           <div>
-            <h1 className="text-4xl font-serif">
-              Food<br />
-              Zero.
-            </h1>
+          <img src={Logo} alt="" className='w-36 h-auto' />
+
           </div>
 
           {/* Contact Section */}
