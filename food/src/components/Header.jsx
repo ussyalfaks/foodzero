@@ -2,7 +2,6 @@ import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
 import { Menu, Facebook, Twitter, Instagram, MessageCircle } from 'lucide-react';
-import backgroundImage2 from '../assets/navbg.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,11 +25,8 @@ const Header = () => {
 
       {isMenuOpen && (
         <div
-          className='bg-[#233000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
-          style={{
-            backgroundImage: `url(${backgroundImage2})`,
-            zIndex: 1000
-          }}
+          className='herobg bg-[#233000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
+        
         >
           <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>
             <li className=''><Link to="/">Home</Link></li>
