@@ -16,11 +16,11 @@ const Header = () => {
       <div className='bg-[#233000] py-4 fixed z-50 px-9 flex justify-between text-white  w-full'>
         <div className='flex items-center gap-6'>
           <img src={Logo} alt="" className='w-36 h-auto' />
-          <Menu className="text-white" size={30} onClick={toggleMenu} />
+          <Menu className="text-white cursor-pointer" size={30} onClick={toggleMenu} />
         </div>
         <div className='flex items-center gap-4'>
           <p className='max-sm:hidden'>+81 66 280 639</p>
-          <p className='border border-[#ffffff] px-3 py-3 rounded-lg'>Reservation</p>
+          <button className='border border-[#ffffff] px-3 py-3 rounded-lg'>Reservation</button>
         </div>
       </div>
 
