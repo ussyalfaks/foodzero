@@ -6,11 +6,11 @@ import StartersImg from "../assets/StartersImg.png"
 
 
 
-const Mains = () => {
+const PastriesDrinks = () => {
   return (
     <>
     <div className="flex flex-col justify-center items-center">
-        <h1 className=" font-serif text-8xl mt-8">Mains</h1>
+        <h1 className=" font-serif text-8xl mt-8">Pastries & Drinks</h1>
         <p className=" text-center">
         This is a section of your menu. Give your section a brief description
         </p>
@@ -23,8 +23,15 @@ const Mains = () => {
             className="object-contain"
             
           />
-            </div>
-      
+     </div>
+            <div className="w-full lg:w-[45%]">
+        <img 
+          src={StartersImg}
+          alt="Caprese Salad" 
+          className="rounded-lg w-auto h-auto md:self-center"
+        />
+      </div>
+
       <div className="lg:w-1/2">
         <div className="relative">
           {/* Menu items */}
@@ -63,13 +70,7 @@ const Mains = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[45%]">
-        <img 
-          src={StartersImg}
-          alt="Caprese Salad" 
-          className="rounded-lg w-auto h-auto md:self-center"
-        />
-      </div>
+     
     </div>
     
     
@@ -78,4 +79,4 @@ const Mains = () => {
   );
 };
 
-export default Mains;
+export default PastriesDrinks;
