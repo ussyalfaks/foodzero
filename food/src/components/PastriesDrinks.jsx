@@ -1,4 +1,4 @@
-import Blueberry from "../assets/Blueberry.png" 
+import Avocado from "../assets/Avocado.png" 
 import DrinksImg from "../assets/DrinksImg.png" 
 
 
@@ -18,8 +18,8 @@ const PastriesDrinks = () => {
     <div className="container relative mx-auto px-2 py-16 flex flex-col md:flex-row gap-8">
           <div className="absolute top-0 -right-10 w-64 h-64 opacity-50">
             <img 
-            src={Blueberry}
-            alt="Blueberry Img" 
+            src={Avocado}
+            alt="Avocado Img" 
             className="object-contain"
             
           />

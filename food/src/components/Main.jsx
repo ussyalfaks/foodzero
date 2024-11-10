@@ -1,4 +1,3 @@
-import Blueberry from "../assets/Blueberry.png" 
 import MainImg from "../assets/MainImg.png" 
 
 
@@ -16,14 +15,7 @@ const Mains = () => {
         </p>
     </div>
     <div className="container relative mx-auto px-2 py-16 flex flex-col md:flex-row gap-8">
-          <div className="absolute top-0 -right-10 w-64 h-64 opacity-50">
-            <img 
-            src={Blueberry}
-            alt="Blueberry Img" 
-            className="object-contain"
-            
-          />
-            </div>
+          
       
       <div className="lg:w-1/2">
         <div className="relative">

@@ -6,18 +6,18 @@ function ReservationForm() {
   const [guests, setGuests] = useState('');
 
   return (
-    <div className="flex flex-col items-center bg-[#f3f4ed] py-10">
+    <div className="flex flex-col items-center bg-[#f3f4ed] py-24">
       <h1 className="text-3xl font-bold font-serif my-12 md:text-5xl">Make a Reservation</h1>
       <p className="text-gray-500 mb-8">Get in touch with restaurant</p>
       <div className="flex flex-col md:flex-row items-center  mb-8">
         <input 
           type="date" 
-          className="border border-green-900 w-56 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
           value={date} 
           onChange={(e) => setDate(e.target.value)}
         />
         <select 
-          className="border border-green-900 w-56 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
           value={time} 
           onChange={(e) => setTime(e.target.value)}
         >
@@ -27,7 +27,7 @@ function ReservationForm() {
           <option value="8:00 pm">8:00 pm</option>
         </select>
         <select 
-          className="border border-green-900 w-56 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
           value={guests} 
           onChange={(e) => setGuests(e.target.value)}
         >
