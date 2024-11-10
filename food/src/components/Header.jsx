@@ -25,7 +25,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div
-          className='herobg bg-[#233000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
+          className='herobg bg-[#233000] z-[1000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
         
         >
           <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>

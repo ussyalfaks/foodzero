@@ -21,10 +21,10 @@ const Hero = () => {
         </div>
             <img src={Bigmeal} alt="" className=' w-96 md:mx-0 md:w-2/5 md:ml-auto ' />
         </div>
-            <div className='flex gap-4 justify-center my-2 md:ml-44 absolute -bottom-2 right-72 items-center'>
-                    <img src={Spices1} alt="" className=' w-36 ' />
-                    <img src={Spices2} alt="" className=' w-36 ' />
-                    <img src={Spices3} alt="" className=' w-36 ' />
+            <div className='flex gap-4 justify-center my-2 -bottom-32 right-28 md:ml-44 absolute md:-bottom-2 md:right-72 items-center'>
+                    <img src={Spices1} alt="" className='  w-20  md:w-36 ' />
+                    <img src={Spices2} alt="" className=' md w-20  md:w-36 ' />
+                    <img src={Spices3} alt="" className=' md w-20  md:w-36 ' />
             </div>
         </div>
     
