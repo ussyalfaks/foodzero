@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <div className='relative'>
-      <div className=' py-4 fixed z-50 px-9 flex justify-between text-white  w-full'>
+    <div className='relative '>
+      <div className=' py-4 fixed z-50 px-9 flex justify-between text-white  w-full bg-white/10 backdrop-blur-lg'>
         <div className='flex items-center gap-6'>
           <img src={Logo} alt="" className='w-36 h-auto' />
           <Menu className="text-white cursor-pointer" size={30} onClick={toggleMenu} />
@@ -28,7 +28,7 @@ const Header = () => {
           className='herobg  z-[1000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
         
         >
-          <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>
+          <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl '>
             <li className=''><Link to="/">Home</Link></li>
             <li><Link to="/MenuPage">Menu</Link></li>
             <li className=' cursor-not-allowed' >Blogs</li>
