@@ -12,14 +12,14 @@ const Header = () => {
 
   return (
     <div className='relative '>
-      <div className=' py-4 fixed z-50 px-9 flex justify-between text-white  w-full bg-white/10 backdrop-blur-lg'>
+      <div className=' py-4 fixed z-50 px-9 flex justify-between  text-white  w-full bg-white/10 backdrop-blur-lg'>
         <div className='flex items-center gap-6'>
-          <img src={Logo} alt="" className='w-36 h-auto' />
+          <img src={Logo} alt="" className='w-36 h-auto text-gray-300' />
           <Menu className="text-white cursor-pointer" size={30} onClick={toggleMenu} />
         </div>
         <div className='flex items-center gap-4'>
-          <p className='max-sm:hidden'>+81 66 280 639</p>
-          <button className='border border-[#ffffff] px-3 py-3 rounded-lg'>Reservation</button>
+          <p className='max-sm:hidden text-gray-300'>+81 66 280 639</p>
+          <button className='border border-[#ffffff] px-3 py-3 rounded-lg text-gray-300'>Reservation</button>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="absolute inset-0 bg-[#233000] -z-10 opacity-80"></div>
+          <div className="absolute inset-0 backdrop-blur-lg -z-10 opacity-80"></div>
         </div>
       )}
     </div>
