@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className='relative '>
+    <div className='relative container'>
       <div className=' py-4 fixed z-50 px-9 flex justify-between  text-white  w-full bg-white/10 backdrop-blur-lg'>
         <div className='flex items-center gap-6'>
           <img src={Logo} alt="" className='w-36 h-auto text-gray-300' />
