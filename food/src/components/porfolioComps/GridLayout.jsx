@@ -11,7 +11,7 @@ export default function GridLayout ({img1, img2, col6, col3,  Htext, Ptext1, Pte
             alt="image-grid-1" 
             className="w-full lg:h-[700px] object-contain rounded-lg mb-5 md:mb-0"
           />
-          <div className='absolute bottom-6 left-6 text-gray-700'>
+          <div className='absolute bottom-6 left-6 text-white'>
               <h2 className='text-xl lg:text-4xl md:pb-4 font-serif'>{Htext}</h2>
               <div className='flex gap-3 mt-2'>
                   <p>{Ptext1}</p>
@@ -26,7 +26,7 @@ export default function GridLayout ({img1, img2, col6, col3,  Htext, Ptext1, Pte
             alt="image-grid-2" 
             className="w-full lg:h-[700px] object-contain rounded-lg md:mb-0"
           />
-            <div className='absolute bottom-6 left-6 text-gray-700'>
+            <div className='absolute bottom-6 left-6 text-white'>
                 <h2 className='text-xl lg:text-4xl md:pb-4 font-serif'>{secHtext}</h2>
                 <div className='flex gap-3 mt-2'>
                     <p>{secPtext1}</p>
