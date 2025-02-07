@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className='relative'>
-      <div className='bg-[#233000] py-4 fixed z-50 px-9 flex justify-between text-white  w-full'>
+      <div className='py-4 fixed z-50 px-9 flex justify-between text-white  w-full'>
         <div className='flex items-center gap-6'>
           <img src={Logo} alt="" className='w-36 h-auto' />
           <Menu className="text-white cursor-pointer" size={30} onClick={toggleMenu} />
@@ -25,7 +25,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div
-          className='herobg bg-[#233000] z-[1000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
+          className='aboutBg bg-[#363635] z-[1000] fixed top-20 left-0 right-0 flex justify-between px-12 items-end bg-cover bg-center py-9 text-white'
         
         >
           <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>
