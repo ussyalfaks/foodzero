@@ -2,48 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: Raleway;
   overflow-x: hidden;
 }
 
-
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("./assets/font/Raleway-Regular.ttf");
+  font-family: "Raleway";
+  font-weight: 400;
+}
 
 @font-face {
-    font-display: swap;
-    font-style: normal;
-    src: url("./assets/font/Raleway-Regular.ttf");
-    font-family: "Raleway";
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-style: normal;
-    src: url("./assets/font/EBGaramond-Regular.ttf");
-    font-family: "EB Garamond";
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-style: normal;
-    src: url("./assets/font/Raleway-Medium.ttf");
-    font-family: "Raleway";
-    font-weight: 560;
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-style: normal;
-    src: url("./assets/font/Raleway-SemiBold.ttf");
-    font-family: "Raleway";
-    font-weight: 600;
-  }
+  font-display: swap;
+  font-style: normal;
+  src: url("./assets/font/EBGaramond-Regular.ttf");
+  font-family: "EB Garamond";
+  font-weight: 400;
+}
 
-  .herobg{
-    background-image: url(./assets/bgnavimg.png);
-  }
-  .HeroMenuBg{
-    background-image: url(./assets/bgnavimg.png);
-  }
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("./assets/font/Raleway-Medium.ttf");
+  font-family: "Raleway";
+  font-weight: 560;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("./assets/font/Raleway-SemiBold.ttf");
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+.herobg {
+  background-image: url(./assets/bgnavimg.png);
+}
+.HeroMenuBg {
+  background-image: url(./assets/bgnavimg.png);
+}
+
+.HeroBg {
+  background-image: url(./assets/portfiolioImages/HeroBg.png);
+}
