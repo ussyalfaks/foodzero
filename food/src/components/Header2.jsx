@@ -31,8 +31,9 @@ const Header = () => {
           <ul className='flex flex-col z-30 gap-4 cursor-pointer font-semibold text-md md:text-2xl'>
             <li className=''><Link to="/">Home</Link></li>
             <li><Link to="/MenuPage">Menu</Link></li>
+            <li><Link to="/PortfoloiGrid">Portfolio</Link></li>
             <li className=' cursor-not-allowed' >Blogs</li>
-            <li className=' cursor-not-allowed'>About</li>
+            <li><Link to="/AboutPage">About</Link></li>
             <li className=' cursor-not-allowed'>Contact</li>
           </ul>
 
