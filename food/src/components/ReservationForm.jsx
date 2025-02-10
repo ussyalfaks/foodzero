@@ -6,18 +6,56 @@ function ReservationForm() {
   const [guests, setGuests] = useState('');
 
   return (
-    <div className="flex flex-col items-center bg-[#f3f4ed] py-24">
-      <h1 className="text-3xl font-bold font-serif my-12 md:text-5xl">Make a Reservation</h1>
-      <p className="text-gray-500 mb-8">Get in touch with restaurant</p>
-      <div className="flex flex-col md:flex-row items-center  mb-8">
+    <div className="  bg-[#f3f4ed] py-24">
+
+      <div className='ml-[25rem]'>
+        <h1 className="text-3xl font-bold font-serif my-12 md:text-5xl mb-0">Make a Reservation</h1>
+        <p className="text-gray-500 mb-8 mt-0">Get in touch with restaurant</p>
+      </div>
+
+      <div className='mx-[25px] flex'>
+        <input 
+          type="First_Name"
+          placeholder='First Name'
+          className='border border-green-900 w-[50%] my-4 mx-4 px-4 bg-transparent py-4'
+          required
+        />
+        <input 
+          type="Last Name" 
+          className='border border-green-900 w-[50%] my-4 mx-4 px-4 bg-transparent py-4'
+          placeholder='Last Name'
+          required
+        />
+      </div>
+
+      <div className='mx-[25px] flex items-center'>
+      <input 
+        type="Email"
+        className='border border-green-900 w-full my-4 mx-4 px-4 bg-transparent py-4'
+        placeholder='Email'
+        required
+      />
+      </div>
+
+      <div className='mx-[25px] flex items-center'>
+        <input 
+          type="Phone"
+          className='border border-green-900 w-full my-4 mx-4 px-4 bg-transparent py-4'
+          placeholder='Phone'
+          required
+         />
+      </div>
+      
+     
+      <div className=" md:flex items-center mx-[25px]">
         <input 
           type="date" 
-          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+          className="border border-green-900 w-[50%] my-4 mx-4 px-4 bg-transparent py-4" 
           value={date} 
           onChange={(e) => setDate(e.target.value)}
         />
         <select 
-          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+          className="border border-green-900 w-[50%] my-4 mx-4 px-4 bg-transparent py-4" 
           value={time} 
           onChange={(e) => setTime(e.target.value)}
         >
@@ -26,8 +64,12 @@ function ReservationForm() {
           <option value="7:00 pm">7:00 pm</option>
           <option value="8:00 pm">8:00 pm</option>
         </select>
-        <select 
-          className="border border-green-900 w-96 my-4 mx-4 px-4 bg-transparent py-3 rounded-md" 
+
+      </div>
+
+      <div className='mx-[25px] flex items-center'>
+      <select 
+          className="border border-green-900 w-full my-4 mx-4 px-4 bg-transparent py-4" 
           value={guests} 
           onChange={(e) => setGuests(e.target.value)}
         >
@@ -37,9 +79,11 @@ function ReservationForm() {
           <option value="3 Person">3 Person</option>
           <option value="4 Person">4 Person</option>
         </select>
+
       </div>
+
       <button 
-        className="bg-green-900 text-white px-6 py-3 rounded-md hover:bg-green-700" 
+        className="bg-green-900 text-white px-6 py-3 rounded-md hover:bg-green-700 ml-[39rem]" 
         onClick={() => alert(`Reservation made for ${guests} at ${time} on ${date}`)}
       >
         Book Now
