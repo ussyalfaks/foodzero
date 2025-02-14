@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Logo from '../assets/Logo.png';
-import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Twitter, Facebook, Youtube,} from 'lucide-react';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
