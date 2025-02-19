@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/HomePage'
 import Menu from './pages/MenuPage'
 import PortfolioGrid from './pages/PortfolioGrid';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/MenuPage" element={<Menu />} />
           <Route path="/PortfolioGrid" element={<PortfolioGrid />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>
