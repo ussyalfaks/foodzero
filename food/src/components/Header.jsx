@@ -45,7 +45,7 @@ const Header = () => {
             <li>
               <Link to="/MenuPage">Menu</Link>
             </li>
-            <li className=" cursor-not-allowed">Blogs</li>
+            <li><Link to="/SinglePost">Blogs</Link></li>
             <li className=" cursor-not-allowed">About</li>
         <li><Link to="/PortfolioGrid">PortfolioGrid</Link></li>
             <li>

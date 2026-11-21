@@ -6,6 +6,7 @@ import Menu from "./pages/MenuPage";
 import SinglePortfolio from "./pages/SinglePortfolio";
 import PortfolioGrid from './pages/PortfolioGrid';
 import AboutPage from './pages/AboutPage';
+import SinglePost from './pages/SinglePost';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/SinglePortfolio" element={<SinglePortfolio />} />
           <Route path="/PortfolioGrid" element={<PortfolioGrid />} />
           <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/SinglePost" element={<SinglePost />} />
         </Routes>
       </div>
     </Router>
